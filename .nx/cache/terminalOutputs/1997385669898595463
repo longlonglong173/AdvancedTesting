@@ -1,0 +1,333 @@
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:41:22 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/Home.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:41:22 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: /Users/long.pham3/Desktop/Team2D2/AdvancedTesting/apps/fromZero/src/screens/Home.tsx: Unexpected token, expected "," (31:16)
+
+[0m [90m 29 |[31m           [33m<[31m[33m/[31m[33mButton[31m[33m>[31m[0m
+[0m [90m 30 |[31m           [33m:[31m[0m
+[0m[31m[1m>[22m[31m[90m 31 |[31m           [33m<[31m[33mLink[31m to[33m=[31m[32m"/login"[31m[33m>[31m[0m
+[0m [90m    |[31m                 [31m[1m^[22m[31m[0m
+[0m [90m 32 |[31m           [33m<[31m[33mButton[31m data[33m-[31mtestid[33m=[31m[32m"btn-login"[31m variant[33m=[31m[32m"contained"[31m[33m>[31m[0m
+[0m [90m 33 |[31m             [33mTo[31m [33mLogin[31m [33mScreen[31m[0m
+[0m [90m 34 |[31m           [33m<[31m[33m/[31m[33mButton[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36m/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/apps/fromZero/src/screens/Home.tsx[39m:31:16
+[33m  29 |            </Button>
+  30 |            :
+  31 |            <Link to="/login">
+     |                  ^
+  32 |            <Button data-testid="btn-login" variant="contained">
+  33 |              To Login Screen[39m
+      at constructor (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:356:19)
+      at TypeScriptParserMixin.raise (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:3223:19)
+      at TypeScriptParserMixin.unexpected (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:3253:16)
+      at TypeScriptParserMixin.expect (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:3585:28)
+      at TypeScriptParserMixin.tsParseDelimitedListWorker (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:7814:14)
+      at TypeScriptParserMixin.tsParseDelimitedList (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:7791:25)
+      at TypeScriptParserMixin.tsParseBracketedList (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:7831:25)
+      at TypeScriptParserMixin.tsParseTypeParameters (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:7925:24)
+      at TypeScriptParserMixin.tsTryParseTypeParameters (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:7912:19)
+      at TypeScriptParserMixin.tsFillSignature (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:7940:37)
+      at /Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:8263:54
+      at TypeScriptParserMixin.tsInAllowConditionalTypesContext (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:8700:14)
+      at TypeScriptParserMixin.tsParseFunctionOrConstructorType (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:8263:10)
+      at TypeScriptParserMixin.tsParseNonConditionalType (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:8589:19)
+      at TypeScriptParserMixin.tsParseType (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:8571:23)
+      at /Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:8565:31
+      at TypeScriptParserMixin.tsInType (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:8682:14)
+      at TypeScriptParserMixin.tsParseTypeAnnotation (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:8563:10)
+      at TypeScriptParserMixin.parseParenItem (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:9470:42)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10599:29)
+      at /Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:9632:39
+      at TypeScriptParserMixin.tryParse (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:3592:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:9632:18)
+      at /Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10567:39
+      at TypeScriptParserMixin.allowInAnd (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:12284:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10567:17)
+      at TypeScriptParserMixin.parseExprListItem (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:12020:18)
+      at TypeScriptParserMixin.parseCallExpressionArguments (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:11054:22)
+      at TypeScriptParserMixin.parseCoverCallAndAsyncArrowHead (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10964:29)
+      at TypeScriptParserMixin.parseSubscript (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10899:19)
+      at TypeScriptParserMixin.parseSubscript (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:9167:18)
+      at TypeScriptParserMixin.parseSubscripts (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10870:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10861:17)
+      at TypeScriptParserMixin.parseUpdate (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:9643:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10551:23)
+      at /Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10547:39
+      at TypeScriptParserMixin.allowInAnd (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:12284:12)
+      at TypeScriptParserMixin.parseExpression (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10547:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:6792:31)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:6871:36)
+      at TypeScriptParserMixin.jsxParseElement (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:6915:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:6927:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10857:23)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:41:28 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/Home.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:41:29 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: /Users/long.pham3/Desktop/Team2D2/AdvancedTesting/apps/fromZero/src/screens/Home.tsx: Unexpected token (31:11)
+
+[0m [90m 29 |[31m           [33m<[31m[33m/[31m[33mButton[31m[33m>[31m[0m
+[0m [90m 30 |[31m           [0m
+[0m[31m[1m>[22m[31m[90m 31 |[31m         )[33m:[31m }[0m
+[0m [90m    |[31m            [31m[1m^[22m[31m[0m
+[0m [90m 32 |[31m       [33m<[31m[33mNxWelcome[31m title[33m=[31m[32m"Home"[31m [33m/[31m[33m>[31m[0m
+[0m [90m 33 |[31m     [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 34 |[31m   )[33m;[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36m/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/apps/fromZero/src/screens/Home.tsx[39m:31:11
+[33m  29 |            </Button>
+  30 |            
+  31 |          ): }
+     |             ^
+  32 |        <NxWelcome title="Home" />
+  33 |      </div>[39m
+      at constructor (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:356:19)
+      at TypeScriptParserMixin.raise (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:3223:19)
+      at TypeScriptParserMixin.unexpected (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:3253:16)
+      at TypeScriptParserMixin.checkExpressionErrors (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:3667:12)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10629:12)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:9643:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10551:23)
+      at /Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10547:39
+      at TypeScriptParserMixin.allowInAnd (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:12284:12)
+      at TypeScriptParserMixin.parseExpression (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10547:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:6792:31)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:6871:36)
+      at TypeScriptParserMixin.jsxParseElement (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:6915:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:6927:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10597:21)
+      at /Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:9632:39
+      at TypeScriptParserMixin.tryParse (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:3592:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:9632:18)
+      at /Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10567:39
+      at TypeScriptParserMixin.allowInAnd (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:12284:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10567:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:11499:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:11137:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:9643:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10551:23)
+      at /Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10547:39
+      at TypeScriptParserMixin.allowInAnd (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:12279:16)
+      at TypeScriptParserMixin.parseExpression (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:10547:17)
+      at TypeScriptParserMixin.parseReturnStatement (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:13003:28)
+      at TypeScriptParserMixin.parseStatementContent (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:12621:21)
+      at TypeScriptParserMixin.parseStatementContent (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:12588:17)
+      at TypeScriptParserMixin.parseStatementListItem (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:12568:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/long.pham3/Desktop/Team2D2/AdvancedTesting/node_modules/@babel/parser/lib/index.js:13189:61)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:41:29 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/Home.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:41:42 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/Home.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:41:53 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/Login.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:42:02 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/screens/Login.tsx[22m [33m(x2)[39m

@@ -1,0 +1,508 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.1.2",
+  "deps": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@hookform/resolvers": "^3.3.2",
+    "@mui/material": "^5.14.18",
+    "@swc/helpers": "~0.5.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.48.2",
+    "react-router-dom": "^6.20.1",
+    "yup": "^1.3.2",
+    "@babel/core": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@cucumber/cucumber": "^10.0.1",
+    "@nx/cypress": "17.1.2",
+    "@nx/devkit": "17.1.2",
+    "@nx/eslint": "17.1.2",
+    "@nx/eslint-plugin": "17.1.2",
+    "@nx/js": "17.1.2",
+    "@nx/playwright": "17.1.2",
+    "@nx/react": "17.1.2",
+    "@nx/vite": "17.1.2",
+    "@nx/workspace": "17.1.2",
+    "@playwright/test": "^1.40.0",
+    "@swc-node/register": "~1.6.7",
+    "@swc/cli": "~0.1.62",
+    "@swc/core": "~1.3.85",
+    "@testing-library/react": "14.0.0",
+    "@types/node": "18.14.2",
+    "@types/react": "18.2.33",
+    "@types/react-dom": "18.2.14",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "@vitejs/plugin-react": "~4.0.0",
+    "@vitest/coverage-v8": "~0.32.0",
+    "@vitest/ui": "~0.32.0",
+    "eslint": "~8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-playwright": "^0.15.3",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "jsdom": "~22.1.0",
+    "nx": "17.1.2",
+    "playwright-bdd": "^5.4.0",
+    "prettier": "^2.6.2",
+    "typescript": "~5.2.2",
+    "vite": "~4.3.9",
+    "vite-plugin-dts": "~2.3.0",
+    "vitest": "~0.32.0"
+  },
+  "pathMappings": {
+    "@e2e-testing/components": [
+      "common/components/src/index.ts"
+    ],
+    "@e2e-testing/features": [
+      "common/features/src/index.ts"
+    ],
+    "@e2e-testing/styles": [
+      "common/styles/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "4351022735255055213"
+      },
+      {
+        "file": ".nx/cache/cloud/2312.01.6.hotfix3/index.js",
+        "hash": "17807890174160981006"
+      },
+      {
+        "file": ".nx/cache/cloud/2312.01.6.hotfix3/lib/daemon/process-run-end.js",
+        "hash": "9178465496593350990"
+      },
+      {
+        "file": ".nx/cache/cloud/2312.01.6.hotfix3/lib/heartbeat/heartbeat-process.js",
+        "hash": "12195602358968166578"
+      },
+      {
+        "file": ".nx/cache/cloud/2312.01.6.hotfix3/package.json",
+        "hash": "11687418979936424737"
+      },
+      {
+        "file": ".nx/cache/cloud/verify.lock",
+        "hash": "17466891078044882296"
+      },
+      {
+        "file": ".nx/cache/d/daemon.log",
+        "hash": "8657699841319731472"
+      },
+      {
+        "file": ".nx/cache/d/server-process.json",
+        "hash": "7671620846363067914"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "15718636115850049425"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "17383950535981613187"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "6032097974464608115"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "15323319016498684951"
+      },
+      {
+        "file": "nx.json",
+        "hash": "3019189154946378248"
+      },
+      {
+        "file": "package.json",
+        "hash": "12160477071744356388"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "8041825066138481061"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "987707210583273291"
+      }
+    ],
+    "projectFileMap": {
+      "features": [
+        {
+          "file": "common/features/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "common/features/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "common/features/README.md",
+          "hash": "1462610106398336454"
+        },
+        {
+          "file": "common/features/package.json",
+          "hash": "558657497761792137"
+        },
+        {
+          "file": "common/features/project.json",
+          "hash": "2635718842069388504"
+        },
+        {
+          "file": "common/features/src/auth/constants/auth.constants.ts",
+          "hash": "16607507790434999283"
+        },
+        {
+          "file": "common/features/src/auth/helpers/auth.helpers.ts",
+          "hash": "6569772674814763342",
+          "deps": [
+            "npm:yup"
+          ]
+        },
+        {
+          "file": "common/features/src/auth/layouts/AuthLayout.tsx",
+          "hash": "17122003420436859760",
+          "deps": [
+            "npm:@mui/material",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "common/features/src/auth/screens/LoginScreen.tsx",
+          "hash": "17179669654332829152",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "components",
+            "npm:@hookform/resolvers",
+            "npm:react-hook-form"
+          ]
+        },
+        {
+          "file": "common/features/src/auth/types/auth.types.ts",
+          "hash": "12094529055103338354"
+        },
+        {
+          "file": "common/features/src/index.ts",
+          "hash": "1316795939991587853"
+        },
+        {
+          "file": "common/features/tsconfig.json",
+          "hash": "16310129786591335633"
+        },
+        {
+          "file": "common/features/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "common/features/vite.config.ts",
+          "hash": "3934362707519001331",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "fromZero-e2e": [
+        {
+          "file": "apps/fromZero-e2e/.eslintrc.json",
+          "hash": "632147010597293032"
+        },
+        {
+          "file": "apps/fromZero-e2e/playwright.config.ts",
+          "hash": "17418371893382703128",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/fromZero-e2e/project.json",
+          "hash": "10680956310621254012"
+        },
+        {
+          "file": "apps/fromZero-e2e/src/auth.spec.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/fromZero-e2e/src/example.spec.ts",
+          "hash": "15771148638962145542",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/fromZero-e2e/src/features/test1.spec.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/fromZero-e2e/src/helpers/test.helpers.ts",
+          "hash": "2832134430516004768",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:child_process"
+          ]
+        }
+      ],
+      "fromZero": [
+        {
+          "file": "apps/fromZero/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/fromZero/index.html",
+          "hash": "5529145605336265595"
+        },
+        {
+          "file": "apps/fromZero/project.json",
+          "hash": "7487696957168423817"
+        },
+        {
+          "file": "apps/fromZero/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/fromZero/src/app/app.module.css",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/fromZero/src/app/app.spec.tsx",
+          "hash": "3356256001687500002",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/fromZero/src/app/app.tsx",
+          "hash": "1396116049156817437",
+          "deps": [
+            "npm:react-router-dom",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/fromZero/src/app/nx-welcome.tsx",
+          "hash": "13758118578713308242"
+        },
+        {
+          "file": "apps/fromZero/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/fromZero/src/constants/conttants.constants.ts",
+          "hash": "16601674700855765112"
+        },
+        {
+          "file": "apps/fromZero/src/helper/helpers.ts",
+          "hash": "6569772674814763342",
+          "deps": [
+            "npm:yup"
+          ]
+        },
+        {
+          "file": "apps/fromZero/src/layouts/AuthLayout.tsx",
+          "hash": "17122003420436859760",
+          "deps": [
+            "npm:@mui/material",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/fromZero/src/main.tsx",
+          "hash": "2785953050314935393",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/fromZero/src/screens/Home.tsx",
+          "hash": "14626994927606929228",
+          "deps": [
+            "npm:@mui/material",
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/fromZero/src/screens/Login.tsx",
+          "hash": "3972116773580604887",
+          "deps": [
+            "components",
+            "npm:@hookform/resolvers",
+            "npm:@mui/material",
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/fromZero/src/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/fromZero/src/types/type.types.ts",
+          "hash": "12094529055103338354"
+        },
+        {
+          "file": "apps/fromZero/tsconfig.app.json",
+          "hash": "7232119452847825095"
+        },
+        {
+          "file": "apps/fromZero/tsconfig.json",
+          "hash": "11166545116916107487"
+        },
+        {
+          "file": "apps/fromZero/tsconfig.spec.json",
+          "hash": "17874504027954657085"
+        },
+        {
+          "file": "apps/fromZero/vite.config.ts",
+          "hash": "18366615802879515562",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "styles": [
+        {
+          "file": "common/styles/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "common/styles/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "common/styles/README.md",
+          "hash": "7518912259565225611"
+        },
+        {
+          "file": "common/styles/package.json",
+          "hash": "4775298301871913742"
+        },
+        {
+          "file": "common/styles/project.json",
+          "hash": "1832800465437415775"
+        },
+        {
+          "file": "common/styles/src/colors.ts",
+          "hash": "17561038753084744809",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "common/styles/src/index.ts",
+          "hash": "7714592819988727934",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "common/styles/src/theme.ts",
+          "hash": "2261271303101423268",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "common/styles/src/typography.ts",
+          "hash": "17605090756423722391",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "common/styles/tsconfig.json",
+          "hash": "16310129786591335633"
+        },
+        {
+          "file": "common/styles/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "common/styles/vite.config.ts",
+          "hash": "15787967702326141129",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "components": [
+        {
+          "file": "common/components/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "common/components/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "common/components/README.md",
+          "hash": "7579566876095758834"
+        },
+        {
+          "file": "common/components/package.json",
+          "hash": "10129614918515934527"
+        },
+        {
+          "file": "common/components/project.json",
+          "hash": "6997184177086358576"
+        },
+        {
+          "file": "common/components/src/FormElements/FormTextField/FormTextField.tsx",
+          "hash": "16216760006697174941",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "common/components/src/FormElements/form.types.ts",
+          "hash": "11147477673165655635"
+        },
+        {
+          "file": "common/components/src/index.ts",
+          "hash": "17426443816000682091"
+        },
+        {
+          "file": "common/components/tsconfig.json",
+          "hash": "16310129786591335633"
+        },
+        {
+          "file": "common/components/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "common/components/vite.config.ts",
+          "hash": "1445013616593668493",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
+        }
+      ]
+    }
+  }
+}
