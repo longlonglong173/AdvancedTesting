@@ -1,179 +1,126 @@
 import { expect, test } from '@playwright/test';
 
 test.describe('auth', () => {
-  test('Login demo test 1', async ({ page }) => {
-    await page.goto('https://demo.applitools.com/');
-    await page.pause();
-    await page.locator('[placeholder="Enter your username"]').fill('Raghav');
-    await page.locator('[placeholder="Enter your password"]').fill('1234');
-    await page.locator('text=Sign in').click();
-    await page.locator('text=ACME').isVisible();
-  });
-
-  test('Login demo test 3', async ({ page }) => {
-    await page.goto(
-      'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'
-    );
-    await page.locator('input[name="Email"]').click();
-    await page.locator('input[name="Email"]').fill('admin@yourstore.com');
-    await page.locator('input[name="Password"]').click();
-    await page.locator('input[name="Password"]').fill('admin');
-    await page.locator('text=Log in').click();
-    await page.locator('#nopSideBarPusher i').click();
-    await page.locator('text=Logout').click();
-    await page.waitForURL(
-      'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'
-    );
-    await page.close();
-  });
-
-  ////
-
-  test('Demo login', async ({ browser }) => {
-    const ctx = await browser.newContext();
-    const page = await ctx.newPage();
-    await page.goto('/login');
-    await page.pause();
-    // fill email
-    await page.getByTestId('login-input-email').fill('abc@gmail.com');
-    // check validate input email
-    const errorEmail = page.getByTestId('login-input-email-error');
-    await expect(errorEmail).toBeHidden();
-
-    // fill password
-    await page.getByTestId('login-input-password').fill('1234');
-
-    // check validate input password
-    const errorPassword = page.getByTestId('login-input-password-error');
-    await expect(errorPassword).toBeHidden();
-
-    // submit login
-    await page.getByTestId('login-button').click();
-
-    // check login success
-    await expect(page).toHaveURL('/');
-
-    // check is login
-    const isLogin = await page.evaluate(() => localStorage.getItem('isLogin'));
-    expect(isLogin).toEqual('1');
-    console.log('Login successfully !!!');
-  });
-
-  // test.use({
-  //   geolocation: { longitude: 13.404954, latitude: 52.520008 },
-  //   permissions: ['geolocation'],
-  //   locale: 'de-DE',
-  //   timezoneId: 'Europe/Berlin',
-  // });
-
-  // test('test location', async ({ page, context }) => {
-  //   await context.setGeolocation({
-  //     longitude: 13.404954,
-  //     latitude: 52.520008,
-  //   });
-  //   await page.goto('https://www.google.com/maps');
-  //   await page.pause();
-  //   await page.close();
-  //   await context.close()
-  // });
-
-  test('Check login in multiple tabs', async ({ browser }) => {
-    const ctx = await browser.newContext();
-    const homePage = await ctx.newPage();
-    await homePage.goto('/');
-    const pageLogin = await ctx.newPage();
-    await pageLogin.goto('/login');
-    await pageLogin.pause();
-    // fill email
-    await pageLogin.getByTestId('login-input-email').fill('abc@gmail.com');
-    // check validate input email
-    const errorEmail = pageLogin.getByTestId('login-input-email-error');
-    await expect(errorEmail).toBeHidden();
-
-    // fill password
-    await pageLogin.getByTestId('login-input-password').fill('1234');
-
-    // check validate input password
-    const errorPassword = pageLogin.getByTestId('login-input-password-error');
-    await expect(errorPassword).toBeHidden();
-
-    // submit login
-    await pageLogin.getByTestId('login-button').click();
-
-    // check login success
-    await expect(pageLogin).toHaveURL('/');
-
-    // check is login
-    const isLogin = await pageLogin.evaluate(() =>
-      localStorage.getItem('isLogin')
-    );
-    expect(isLogin).toEqual('1');
-    console.log('Login successfully !!!');
-
-    //check is home page have same data login
-    const homeIsLogin = await homePage.evaluate(() =>
-      localStorage.getItem('isLogin')
-    );
-    expect(homeIsLogin).toEqual('1');
-    console.log('Home page login successfully !!!');
-  });
-});
-
-test.describe('api tests', () => {
-  // Create a test using request context
-  test('Demo API Get', async ({ request }) => {
-    // Send a GET request & store response in a variable
-    const response = await request.get('https://reqres.in/api/users/2');
-
-    // Verify the status code of the response is 200
-    expect(response.status()).toBe(200);
-
-    // Check response contains some text
-    const text = await response.text();
-    expect(text).toContain('Janet');
-
-    // Write response on the console
-    console.log(await response.json());
-  });
-
-  test('Demo API POST request', async ({ request }) => {
-    // Send a POST request along with request body & store response in a variable
-    const response = await request.post('https://reqres.in/api/users', {
-      data: {
-        name: 'Raghav',
-        job: 'teacher',
-      },
+    test('Login demo test 1', async ({ page }) => {
+        await page.goto('https://demo.applitools.com/');
+        await page.pause();
+        await page
+            .locator('[placeholder="Enter your username"]')
+            .fill('Raghav');
+        await page.locator('[placeholder="Enter your password"]').fill('1234');
+        await page.locator('text=Sign in').click();
+        await page.locator('text=ACME').isVisible();
     });
 
-    expect(response.status()).toBe(201);
-
-    const text = await response.text();
-
-    expect(text).toContain('Raghav');
-
-    console.log(await response.json());
-  });
-
-  test('Demo API PUT Request', async ({ request }) => {
-    const response = await request.put('https://reqres.in/api/users/2', {
-      data: {
-        first_name: 'Raghav',
-        last_name: 'teacher',
-      },
+    test('Login demo test 3', async ({ page }) => {
+        await page.goto(
+            'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'
+        );
+        await page.locator('input[name="Email"]').click();
+        await page.locator('input[name="Email"]').fill('admin@yourstore.com');
+        await page.locator('input[name="Password"]').click();
+        await page.locator('input[name="Password"]').fill('admin');
+        await page.locator('text=Log in').click();
+        await page.locator('#nopSideBarPusher i').click();
+        await page.locator('text=Logout').click();
+        await page.waitForURL(
+            'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'
+        );
+        await page.close();
     });
 
-    expect(response.status()).toBe(200);
+    ////
 
-    const text = await response.text();
+    test('Demo login', async ({ browser }) => {
+        const ctx = await browser.newContext();
+        const page = await ctx.newPage();
+        await page.goto('/login');
+        await page.pause();
+        // fill email
+        await page.getByTestId('login-input-email').fill('abc@gmail.com');
+        // check validate input email
+        const errorEmail = page.getByTestId('login-input-email-error');
+        await expect(errorEmail).toBeHidden();
 
-    expect(text).toContain('Raghav');
+        // fill password
+        await page.getByTestId('login-input-password').fill('1234');
 
-    console.log(await response.json());
-  });
+        // check validate input password
+        const errorPassword = page.getByTestId('login-input-password-error');
+        await expect(errorPassword).toBeHidden();
 
-  test('Demo API DELETE Request', async ({ request }) => {
-    const response = await request.delete('https://reqres.in/api/users/2');
+        // submit login
+        await page.getByTestId('login-button').click();
 
-    expect(response.status()).toBe(204);
-  });
+        // check login success
+        await expect(page).toHaveURL('/');
+
+        // check is login
+        const isLogin = await page.evaluate(() =>
+            localStorage.getItem('isLogin')
+        );
+        expect(isLogin).toEqual('1');
+        console.log('Login successfully !!!');
+    });
+
+    // test.use({
+    //   geolocation: { longitude: 13.404954, latitude: 52.520008 },
+    //   permissions: ['geolocation'],
+    //   locale: 'de-DE',
+    //   timezoneId: 'Europe/Berlin',
+    // });
+
+    // test('test location', async ({ page, context }) => {
+    //   await context.setGeolocation({
+    //     longitude: 13.404954,
+    //     latitude: 52.520008,
+    //   });
+    //   await page.goto('https://www.google.com/maps');
+    //   await page.pause();
+    //   await page.close();
+    //   await context.close()
+    // });
+
+    test('Check login in multiple tabs', async ({ browser }) => {
+        const ctx = await browser.newContext();
+        const homePage = await ctx.newPage();
+        await homePage.goto('/');
+        const pageLogin = await ctx.newPage();
+        await pageLogin.goto('/login');
+        await pageLogin.pause();
+        // fill email
+        await pageLogin.getByTestId('login-input-email').fill('abc@gmail.com');
+        // check validate input email
+        const errorEmail = pageLogin.getByTestId('login-input-email-error');
+        await expect(errorEmail).toBeHidden();
+
+        // fill password
+        await pageLogin.getByTestId('login-input-password').fill('1234');
+
+        // check validate input password
+        const errorPassword = pageLogin.getByTestId(
+            'login-input-password-error'
+        );
+        await expect(errorPassword).toBeHidden();
+
+        // submit login
+        await pageLogin.getByTestId('login-button').click();
+
+        // check login success
+        await expect(pageLogin).toHaveURL('/');
+
+        // check is login
+        const isLogin = await pageLogin.evaluate(() =>
+            localStorage.getItem('isLogin')
+        );
+        expect(isLogin).toEqual('1');
+        console.log('Login successfully !!!');
+
+        //check is home page have same data login
+        const homeIsLogin = await homePage.evaluate(() =>
+            localStorage.getItem('isLogin')
+        );
+        expect(homeIsLogin).toEqual('1');
+        console.log('Home page login successfully !!!');
+    });
 });

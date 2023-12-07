@@ -69,51 +69,7 @@
     "nonProjectFiles": [
       {
         "file": ".gitignore",
-        "hash": "4351022735255055213"
-      },
-      {
-        "file": ".nx/cache/cloud/2312.01.6.hotfix3/index.js",
-        "hash": "17807890174160981006"
-      },
-      {
-        "file": ".nx/cache/cloud/2312.01.6.hotfix3/lib/daemon/process-run-end.js",
-        "hash": "9178465496593350990"
-      },
-      {
-        "file": ".nx/cache/cloud/2312.01.6.hotfix3/lib/heartbeat/heartbeat-process.js",
-        "hash": "12195602358968166578"
-      },
-      {
-        "file": ".nx/cache/cloud/2312.01.6.hotfix3/package.json",
-        "hash": "11687418979936424737"
-      },
-      {
-        "file": ".nx/cache/cloud/verify.lock",
-        "hash": "17466891078044882296"
-      },
-      {
-        "file": ".nx/cache/d/daemon.log",
-        "hash": "8657699841319731472"
-      },
-      {
-        "file": ".nx/cache/d/server-process.json",
-        "hash": "7671620846363067914"
-      },
-      {
-        "file": ".nx/cache/file-map.json",
-        "hash": "15718636115850049425"
-      },
-      {
-        "file": ".nx/cache/lockfile.hash",
-        "hash": "17383950535981613187"
-      },
-      {
-        "file": ".nx/cache/parsed-lock-file.json",
-        "hash": "6032097974464608115"
-      },
-      {
-        "file": ".nx/cache/project-graph.json",
-        "hash": "15323319016498684951"
+        "hash": "7378393557393079923"
       },
       {
         "file": "nx.json",
@@ -133,127 +89,6 @@
       }
     ],
     "projectFileMap": {
-      "features": [
-        {
-          "file": "common/features/.babelrc",
-          "hash": "2946678488919325452"
-        },
-        {
-          "file": "common/features/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "common/features/README.md",
-          "hash": "1462610106398336454"
-        },
-        {
-          "file": "common/features/package.json",
-          "hash": "558657497761792137"
-        },
-        {
-          "file": "common/features/project.json",
-          "hash": "2635718842069388504"
-        },
-        {
-          "file": "common/features/src/auth/constants/auth.constants.ts",
-          "hash": "16607507790434999283"
-        },
-        {
-          "file": "common/features/src/auth/helpers/auth.helpers.ts",
-          "hash": "6569772674814763342",
-          "deps": [
-            "npm:yup"
-          ]
-        },
-        {
-          "file": "common/features/src/auth/layouts/AuthLayout.tsx",
-          "hash": "17122003420436859760",
-          "deps": [
-            "npm:@mui/material",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "common/features/src/auth/screens/LoginScreen.tsx",
-          "hash": "17179669654332829152",
-          "deps": [
-            "npm:react",
-            "npm:@mui/material",
-            "components",
-            "npm:@hookform/resolvers",
-            "npm:react-hook-form"
-          ]
-        },
-        {
-          "file": "common/features/src/auth/types/auth.types.ts",
-          "hash": "12094529055103338354"
-        },
-        {
-          "file": "common/features/src/index.ts",
-          "hash": "1316795939991587853"
-        },
-        {
-          "file": "common/features/tsconfig.json",
-          "hash": "16310129786591335633"
-        },
-        {
-          "file": "common/features/tsconfig.lib.json",
-          "hash": "11908890256657676622"
-        },
-        {
-          "file": "common/features/vite.config.ts",
-          "hash": "3934362707519001331",
-          "deps": [
-            "npm:vite",
-            "npm:@vitejs/plugin-react",
-            "npm:vite-plugin-dts",
-            "npm:path",
-            "npm:@nx/vite"
-          ]
-        }
-      ],
-      "fromZero-e2e": [
-        {
-          "file": "apps/fromZero-e2e/.eslintrc.json",
-          "hash": "632147010597293032"
-        },
-        {
-          "file": "apps/fromZero-e2e/playwright.config.ts",
-          "hash": "17418371893382703128",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/fromZero-e2e/project.json",
-          "hash": "10680956310621254012"
-        },
-        {
-          "file": "apps/fromZero-e2e/src/auth.spec.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/fromZero-e2e/src/example.spec.ts",
-          "hash": "15771148638962145542",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        },
-        {
-          "file": "apps/fromZero-e2e/src/features/test1.spec.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/fromZero-e2e/src/helpers/test.helpers.ts",
-          "hash": "2832134430516004768",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:child_process"
-          ]
-        }
-      ],
       "fromZero": [
         {
           "file": "apps/fromZero/.eslintrc.json",
@@ -376,6 +211,143 @@
           ]
         }
       ],
+      "components": [
+        {
+          "file": "common/components/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "common/components/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "common/components/README.md",
+          "hash": "7579566876095758834"
+        },
+        {
+          "file": "common/components/package.json",
+          "hash": "10129614918515934527"
+        },
+        {
+          "file": "common/components/project.json",
+          "hash": "6997184177086358576"
+        },
+        {
+          "file": "common/components/src/FormElements/FormTextField/FormTextField.tsx",
+          "hash": "16216760006697174941",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "common/components/src/FormElements/form.types.ts",
+          "hash": "11147477673165655635"
+        },
+        {
+          "file": "common/components/src/index.ts",
+          "hash": "17426443816000682091"
+        },
+        {
+          "file": "common/components/tsconfig.json",
+          "hash": "16310129786591335633"
+        },
+        {
+          "file": "common/components/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "common/components/vite.config.ts",
+          "hash": "1445013616593668493",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "features": [
+        {
+          "file": "common/features/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "common/features/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "common/features/README.md",
+          "hash": "1462610106398336454"
+        },
+        {
+          "file": "common/features/package.json",
+          "hash": "558657497761792137"
+        },
+        {
+          "file": "common/features/project.json",
+          "hash": "2635718842069388504"
+        },
+        {
+          "file": "common/features/src/auth/constants/auth.constants.ts",
+          "hash": "16607507790434999283"
+        },
+        {
+          "file": "common/features/src/auth/helpers/auth.helpers.ts",
+          "hash": "6569772674814763342",
+          "deps": [
+            "npm:yup"
+          ]
+        },
+        {
+          "file": "common/features/src/auth/layouts/AuthLayout.tsx",
+          "hash": "17122003420436859760",
+          "deps": [
+            "npm:@mui/material",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "common/features/src/auth/screens/LoginScreen.tsx",
+          "hash": "17179669654332829152",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "components",
+            "npm:@hookform/resolvers",
+            "npm:react-hook-form"
+          ]
+        },
+        {
+          "file": "common/features/src/auth/types/auth.types.ts",
+          "hash": "12094529055103338354"
+        },
+        {
+          "file": "common/features/src/index.ts",
+          "hash": "1316795939991587853"
+        },
+        {
+          "file": "common/features/tsconfig.json",
+          "hash": "16310129786591335633"
+        },
+        {
+          "file": "common/features/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "common/features/vite.config.ts",
+          "hash": "3934362707519001331",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
       "styles": [
         {
           "file": "common/styles/.babelrc",
@@ -445,61 +417,48 @@
           ]
         }
       ],
-      "components": [
+      "fromZero-e2e": [
         {
-          "file": "common/components/.babelrc",
-          "hash": "2946678488919325452"
+          "file": "apps/fromZero-e2e/.eslintrc.json",
+          "hash": "632147010597293032"
         },
         {
-          "file": "common/components/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "common/components/README.md",
-          "hash": "7579566876095758834"
-        },
-        {
-          "file": "common/components/package.json",
-          "hash": "10129614918515934527"
-        },
-        {
-          "file": "common/components/project.json",
-          "hash": "6997184177086358576"
-        },
-        {
-          "file": "common/components/src/FormElements/FormTextField/FormTextField.tsx",
-          "hash": "16216760006697174941",
+          "file": "apps/fromZero-e2e/playwright.config.ts",
+          "hash": "17418371893382703128",
           "deps": [
-            "npm:react",
-            "npm:react-hook-form",
-            "npm:@mui/material"
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
           ]
         },
         {
-          "file": "common/components/src/FormElements/form.types.ts",
-          "hash": "11147477673165655635"
+          "file": "apps/fromZero-e2e/project.json",
+          "hash": "15370411972149279127"
         },
         {
-          "file": "common/components/src/index.ts",
-          "hash": "17426443816000682091"
-        },
-        {
-          "file": "common/components/tsconfig.json",
-          "hash": "16310129786591335633"
-        },
-        {
-          "file": "common/components/tsconfig.lib.json",
-          "hash": "11908890256657676622"
-        },
-        {
-          "file": "common/components/vite.config.ts",
-          "hash": "1445013616593668493",
+          "file": "apps/fromZero-e2e/src/auth.spec.ts",
+          "hash": "329182239818455099",
           "deps": [
-            "npm:vite",
-            "npm:@vitejs/plugin-react",
-            "npm:vite-plugin-dts",
-            "npm:path",
-            "npm:@nx/vite"
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/fromZero-e2e/src/example.spec.ts",
+          "hash": "15771148638962145542",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/fromZero-e2e/src/features/test1.spec.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/fromZero-e2e/src/helpers/test.helpers.ts",
+          "hash": "2832134430516004768",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:child_process"
           ]
         }
       ]
